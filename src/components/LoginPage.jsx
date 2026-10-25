@@ -149,7 +149,6 @@ export const LoginPage = () => {
                   Email Address
                 </label>
                 <div className="login--wrapper">
-                  <Mail size={16} className="login--icon" />
                   <input
                     id="login-email"
                     type="email"
