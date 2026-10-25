@@ -20,8 +20,8 @@ export const LoginPage = () => {
   const [authMode, setAuthMode] = useState('login'); // 'login' | 'register'
 
   // Sign In state
-  const [email, setEmail] = useState('soorya@symvian.edu');
-  const [password, setPassword] = useState('symvian');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
   // Register state
@@ -148,13 +148,13 @@ export const LoginPage = () => {
                 <label className="form-label" htmlFor="login-email">
                   Email Address
                 </label>
-                <div className="login-input-wrapper">
-                  <Mail size={16} className="login-input-icon" />
+                <div className="login--wrapper">
+                  <Mail size={16} className="login--icon" />
                   <input
                     id="login-email"
                     type="email"
                     className="form-input login-input-with-icon"
-                    placeholder="name@amrita.edu"
+                    placeholder="name@email.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
